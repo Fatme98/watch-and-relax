@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Watch&Relax</title>
+
+    <link rel="stylesheet" href="/css/profile-style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="body">
+<header>
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">W&R</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right" th:object="${username}">
+                <li><a th:href="@{/home/(username=${username})}"><span class="glyphicon glyphicon-user"></span> Home</a></li>
+                <li><a th:href="@{/film/add/(username=${username})}"><span class="glyphicon glyphicon-log-in"></span>Add Film</a></li>
+                <li><a href="/user/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<aside th:object="${user}" class="aside-class">
+    <div>
+        <img class="img" th:src="*{photoUrl}" alt="Profile Picture">
+    </div>
+    <div>
+        <p th:text="*{username}" class="username"></p>
+        <a class="infor" th:href="@{/user/info/(username=*{username})}">Information</a>
+    </div>
+    <div>
+        <a class="infor" th:href="@{/user/favourite/(username=*{username})}">Favourites</a>
+    </div>
+    <article class="searches" th:if="${isYourProfile}">
+        <section class="search-tools">
+            <form th:object="${searchForFilmBindingModel}" th:action="@{/search/film}" method="POST">
+                <input th:field="*{name}" class="search" type="text" placeholder="Search for film" name="search-for-film">
+                <button class="button" type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="search-tools">
+            <form th:object="${searchForActorBindingModel}" th:action="@{/search/actor}" method="POST">
+                <input th:field="*{name}" class="search" type="text" placeholder="Search for actor" name="search-for-actor">
+                <button class="button" type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="search-tools">
+            <form th:object="${searchForUserBindingModel}" th:action="@{/search/user}" method="POST">
+                <input th:field="*{name}" class="search" type="text" placeholder="Search for user" name="search-for-user">
+                <button class="button" type="submit">Submit</button>
+            </form>
+        </section>
+    </article>
+
+
+
+</aside>
+<main th:object="${user}">
+    <div>
+        <h1 class="publications">Publications</h1>
+    </div>
+    <div class="no-publications" th:if="${user.getFilms().isEmpty()}">There are no publications</div>
+    <div th:if="${!user.getFilms().isEmpty()}" th:each="i:${user.getFilms()}" th:object="${i}" class="pub-profile">
+        <div>
+            <img class="img-pub" th:src="${i.photoUrl}" alt="Film Picture">
+            <a th:text="*{name}" class="film-pub" th:href="@{/film/info/(id=*{id})}">Film Name</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer">
+        &copy;2021 Copyright:Watch&Relax
+    </div>
+</footer>
+</body>
+</html>

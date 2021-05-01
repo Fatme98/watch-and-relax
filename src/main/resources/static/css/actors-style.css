@@ -1,0 +1,36 @@
+.body {
+    background-color:lightskyblue;
+}
+
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+}
+.navbar{
+    background-color:lightcyan
+
+}
+.act{
+    padding-left:30vw;
+    font-size:5vw;
+    color:darkblue;
+}
+.actors-list{
+
+}
+.img-actor{
+    max-width:50%;
+    padding-left:32vw;
+}
+.actor-name{
+    color:darkblue;
+    font-size:4vw;
+}
+footer{
+    color:darkblue;
+    display: flex;
+    padding-left: 35vw;
+    width: 100%;
+    height: auto;
+    font-size: 2vw;
+}

@@ -1,0 +1,39 @@
+.body {
+    background-color:lightskyblue;
+}
+
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+}
+.navbar{
+    background-color:lightcyan
+
+}
+.publication{
+    display: flex;
+    padding-left: 20vw;
+}
+
+
+.film-pub{
+    padding-top:5vw;
+    margin-left: 5vw;
+    font-size: 25px;
+    color:darkblue;
+}
+
+.img-pub{
+    width:25vw;
+    border: 3px solid darkblue;
+    margin-bottom: 10px;
+    margin-top:10px ;
+}
+footer{
+    color:darkblue;
+    display: flex;
+    padding-left: 35vw;
+    width: 100%;
+    height: auto;
+    font-size: 2vw;
+}

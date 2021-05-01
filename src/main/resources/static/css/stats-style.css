@@ -1,0 +1,29 @@
+.body {
+    background-color:lightskyblue;
+}
+
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+}
+.navbar{
+    background-color:lightcyan
+
+}
+.requests{
+    padding-left:20vw;
+}
+.stats-style{
+    font-size:3vw;
+    padding-top:10vw;
+    padding-left:20vw;
+    color:darkblue;
+}
+footer{
+    color:darkblue;
+    display: flex;
+    padding-left: 37vw;
+    width: 100%;
+    height: auto;
+    font-size: 2vw;
+}

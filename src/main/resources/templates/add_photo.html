@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Watch&Relax</title>
+    <link rel="stylesheet" href="/css/add-photo-style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="body">
+<header>
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">W&R</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right" th:object="${username}">
+                <li><a th:href="@{/home/(username=${username})}"><span class="glyphicon glyphicon-user"></span> Home</a></li>
+                <li><a th:href="@{/film/add/(username=${username})}"><span class="glyphicon glyphicon-log-in"></span>Add Film</a></li>
+                <li><a href="/user/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="photo-box" th:object="${id}">
+        <h1>Add photo</h1>
+        <form th:object="${photoAddBindingModel}" th:action="@{/photo/add/(id=${id})}" method="POST" enctype="multipart/form-data">
+            <div>
+                <p>Name of actor whose photo you add</p>
+                <input th:field="*{actorName}" th:errorclass="bg-danger" type="text" name="actorName" placeholder="Enter actor name">
+                <small  th:each = "e : ${#fields.errors('actorName')}" th:text = "${e}" class="text-danger"></small>
+            </div>
+            <div>
+                <p>Name of film whose photo you add</p>
+                <input th:field="*{filmName}" th:errorclass="bg-danger" type="text" name="filmName" placeholder="Enter film name">
+                <small  th:each = "e : ${#fields.errors('filmName')}" th:text = "${e}" class="text-danger"></small>
+            </div>
+            <div>
+                <p class="ui-icon-image">Select photo</p>
+                <input type="file" name="img" placeholder="Enter image" accept="image/*">
+            </div>
+
+            <input type="submit" name="submit" value="Add photo">
+        </form>
+
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        &copy;2021 Copyright:Watch&Relax
+    </div>
+</footer>
+</body>
+</html>

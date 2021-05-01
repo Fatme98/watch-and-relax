@@ -1,0 +1,38 @@
+.body {
+    background-color:lightskyblue;
+}
+
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+}
+.navbar{
+    background-color:lightcyan
+
+}
+
+
+
+.gallery-img {
+    padding-top:30px;
+    padding-left:20vw;
+    padding-right:20vw;
+    width:100vw;;
+}
+
+.delete{
+    color:white;
+    background-color:darkblue;
+    padding-left:0.5vw;
+    padding-right:0.5vw;
+    border-radius:20vw;
+    margin-left:3.5vw;
+}
+footer{
+    color:darkblue;
+    display: flex;
+    padding-left: 35vw;
+    width: 100%;
+    height: auto;
+    font-size: 2vw;
+}

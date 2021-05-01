@@ -1,0 +1,60 @@
+.body {
+    background-color:lightskyblue;
+}
+
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+}
+.navbar{
+    background-color:lightcyan
+
+}
+.publictions-users{
+    padding-left: 30vw;
+}
+.user{
+
+}
+hr.dotted{
+    border-top:3px dotted darkblue;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.users-picture{
+    border:0.1vw solid darkblue;
+    border-radius:30vw;
+    width:100px;
+}
+.username-style{
+    font-size: 25px;
+    color:darkblue;
+}
+.no-publications{
+    margin-left: 14vw;
+    font-size: 25px;
+    color:darkblue;
+}
+.film-publication{
+    padding-left: 2vw;
+}
+.film-pic{
+    width:210px;
+    border: 3px solid darkblue;
+    margin-bottom: 10px;
+    margin-top:10px ;
+}
+.film-name{
+    margin-left: 5vw;
+    font-size: 25px;
+    color:darkblue;
+}
+
+footer{
+    color:darkblue;
+    display: flex;
+    padding-left: 35vw;
+    width: 100%;
+    height: auto;
+    font-size: 2vw;
+}
