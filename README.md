@@ -1,5 +1,9 @@
 # watch-and-relax
 It is a social network for movie lovers.
+
+
+
+
 List of all functionalities
 1. Register
 2. Login
