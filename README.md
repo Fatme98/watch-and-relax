@@ -15,7 +15,7 @@ List of all functionalities
 10. Add and delete videos of the actors
 11. Add and delete news for the actors
 12. Can write and delete comments for actors and films 
-13  Films can be add as favourites
+13.  Films can be add as favourites
 14. One user can see publications of all other users
 15. The admin can add and delete announcements, which can be seen from all users
  
