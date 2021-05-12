@@ -18,5 +18,6 @@ List of all functionalities
 13.  Films can be add as favourites
 14. One user can see publications of all other users
 15. The admin can add and delete announcements, which can be seen from all users
+16. Search users, films and actors
  
 
