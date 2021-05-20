@@ -1,0 +1,59 @@
+.body {
+    background-color:lightskyblue;
+}
+
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+}
+.navbar{
+    background-color:lightcyan
+
+}
+.info-pics{
+    padding-left:14vw;
+
+}
+.personal-information{
+    padding-left:5vw;
+    font-size:3vw;
+
+}
+.img{
+    border:1vw solid darkblue;
+    border-radius:11vw;
+    width:40vw;
+}
+.username{
+    font-size:5vw;
+    padding-left:14vw;
+    font-family: 'Great Vibes', cursive;
+}
+.inf{
+    color:darkblue;
+
+}
+.fName{
+    font-size:2vw;
+    padding-left:1vw;
+    color:darkblue;
+}
+.lName{
+    font-size:2vw;
+    padding-left:1vw;
+    color:darkblue;
+}
+
+.email{
+    font-size:2vw;
+    padding-left:1vw;
+    color:darkblue;
+}
+footer{
+    color:darkblue;
+    display: flex;
+    padding-left: 35vw;
+    width: 100%;
+    height: auto;
+    font-size: 2vw;
+}

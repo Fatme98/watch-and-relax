@@ -1,0 +1,43 @@
+.body {
+    background-color:lightskyblue;
+}
+
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+}
+.navbar{
+    background-color:lightcyan
+
+}
+.video-name{
+    color:white;
+    background-color:darkblue;
+    padding-left:0.5vw;
+    padding-right:0.5vw;
+    border-radius:20vw;
+    margin-left:3.5vw;
+    text-align: center;
+}
+
+video{
+    height: auto;
+    width:50%;
+}
+
+.delete{
+    color:white;
+    background-color:darkblue;
+    padding-left:0.5vw;
+    padding-right:0.5vw;
+    border-radius:20vw;
+    margin-left:3.5vw;
+}
+footer{
+    color:darkblue;
+    display: flex;
+    padding-left: 35vw;
+    width: 100%;
+    height: auto;
+    font-size: 2vw;
+}

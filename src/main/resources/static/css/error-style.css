@@ -1,0 +1,33 @@
+.body {
+    background-color:lightskyblue;
+}
+
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+}
+.navbar{
+    background-color:lightcyan
+
+}
+.error-title{
+    padding-left:20vw;
+    padding-top:10vw;
+    font-size:3vw;
+    color:darkblue;
+}
+.message{
+    padding-left:29vw;
+    padding-top:10vw;
+    font-size:3vw;
+    color:darkblue;
+}
+
+footer{
+    color: darkblue;
+    display: flex;
+    padding-left: 35vw;
+    width: 100%;
+    height: auto;
+    font-size: 2vw;
+}
